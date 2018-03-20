@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org">
+
+
+<head>
+
+<meta charset="utf-8" />
+<title>Insert title here</title>
+  <link type="text/css" rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+
+<form th:action ="@{depot}"   method="post">
+<label>Le Code du compte </label>
+<input type="text" name = "codeCompte"/>
+
+<label>Le Montant</label>
+<input type="text" name = "montant"/>
+
+<button type="submit">OK</button>
+
+
+</form>
+
+<!-- <p th:text="${compte.libelle}"></p>
+<p th:text="${compte.dateCreation}"></p> -->
+
+
+
+</body>
+</html>

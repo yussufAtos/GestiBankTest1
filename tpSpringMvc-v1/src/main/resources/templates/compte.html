@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+
+
+
+
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org">
+
+
+<head>
+
+<meta charset="utf-8" />
+<title>Insert title here</title>
+<link type="text/css" rel="stylesheet" href="style.css" />
+</head>
+
+
+<body>
+
+	<h3>Liste des comptes</h3>
+
+
+
+
+
+
+	<table>
+		<thead>
+
+			<tr>
+				<th>codeCompte</th>
+				<th>Libelle</th>
+				<th>Solde</th>
+
+			</tr>
+
+		</thead>
+
+
+
+
+
+		<tbody>
+
+
+			<tr th:each="p :${comptes}">
+				<td th:text="${p.codeCompte}"></td>
+				<td th:text="${p.libelle}"></td>
+				<td th:text="${p.solde}"></td>
+
+
+
+			</tr>
+
+
+
+		</tbody>
+
+
+
+	</table>
+
+	<h3>Liste des clients </h3>
+	
+	
+	<table>
+		<thead>
+
+			<tr>
+				<th>IdClient</th>
+				<th>Nom</th>
+				<th>Prenom</th>
+
+			</tr>
+
+		</thead>
+
+
+
+
+
+		<tbody>
+
+
+			  <tr th:each="c :${clients}">
+				<td th:text="${c.id}"></td>
+				<td th:text="${c.name}"></td>
+				<td th:text="${c.prenom}"></td>
+
+
+
+			</tr>
+
+
+
+		</tbody>
+
+
+
+	</table>
+	
+	
+		<h3>Liste des depots </h3>
+		
+		<table>
+		<thead>
+
+			<tr>
+				<th>Numero De depot</th>
+				<th>Montant</th>
+				<th>Date de Depot</th>
+
+			</tr>
+
+		</thead>
+
+
+
+
+
+		<tbody>
+
+
+			  <tr th:each="d :${depots}">
+				<td th:text="${d.numeroVersment}"></td>
+				<td th:text="${d.montant}"></td>
+				<td th:text="${d.dateVersment}"></td>
+
+
+
+			</tr>
+
+
+
+		</tbody>
+
+
+
+	</table>	
+		
+	
+
+
+
+
+</body>
+</html>

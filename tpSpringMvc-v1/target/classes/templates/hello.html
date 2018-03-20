@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<!-- <html> -->
+
+
+
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org">
+
+
+<head>
+
+<meta charset="utf-8" />
+<title>Insert title here</title>
+  <link type="text/css" rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+
+<!-- <div class ="panel">
+<label>ID: </label>
+<label   th:text ="${compte.id}"></label>
+<br />
+<label>Solde: </label>
+<label   th:text ="${compte.solde}"></label>
+<br />
+<label>Libelle: </label>
+<label   th:text ="${compte.solde}"></label>
+<br />
+</div>
+<p th:text="${compte.libelle}"></p>
+<p th:text="${compte.solde}"></p> -->
+<h3>Le depot a bien eté effectué </h3>
+<p th:text="${compte.codeCompte}"></p>
+<p th:text="${compte.libelle}"></p>
+<p th:text="${compte.solde}"></p> 
+	
+
+
+</body>
+</html>
